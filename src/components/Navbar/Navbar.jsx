@@ -5,7 +5,7 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='shadow-sm'>
             <div className='flex flex-col md:flex-row gap-3 justify-between items-center py-4 md:px-20'>
                 <h2 className='text-2xl font-bold text-[#1F2937]'>Keen<span className='text-[#244D3F]'>Keeper</span></h2>
                 <ul className='flex items-center'>

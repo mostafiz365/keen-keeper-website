@@ -18,9 +18,9 @@
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 10,
     "status": "almost due",
-    "tags": ["university", "project partner"],
+    "tags": ["university", "friend"],
     "bio": "Worked on multiple university projects together. Very passionate about design.",
-    "goal": 14,
+    "goal": 20,
     "next_due_date": "2026-04-17"
   },
   {
@@ -32,7 +32,7 @@
     "status": "on-track",
     "tags": ["office", "colleague"],
     "bio": "Works in the same company. We often discuss tech and startups.",
-    "goal": 14,
+    "goal": 24,
     "next_due_date": "2026-04-22"
   },
   {
@@ -44,7 +44,7 @@
     "status": "overdue",
     "tags": ["neighbor", "family friend"],
     "bio": "Grew up in the same neighborhood. Our families are very close.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2026-03-30"
   },
   {
@@ -68,7 +68,7 @@
     "status": "on-track",
     "tags": ["university", "close friend"],
     "bio": "One of my closest university friends. We love traveling and trying new খাবার.",
-    "goal": 14,
+    "goal": 10,
     "next_due_date": "2026-04-25"
   },
   {
@@ -80,7 +80,7 @@
     "status": "overdue",
     "tags": ["freelance", "client"],
     "bio": "Worked together on several freelance projects. Great communication and professionalism.",
-    "goal": 14,
+    "goal": 28,
     "next_due_date": "2026-04-02"
   },
   {
@@ -104,7 +104,7 @@
     "status": "on-track",
     "tags": ["startup", "co-founder"],
     "bio": "We are building a startup together. Regular communication is part of our routine.",
-    "goal": 14,
+    "goal": 20,
     "next_due_date": "2026-04-26"
   },
   {
@@ -128,7 +128,7 @@
     "status": "overdue",
     "tags": ["college", "roommate"],
     "bio": "We were roommates during college. Shared many late-night study sessions.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2026-03-28"
   },
   {
@@ -140,7 +140,7 @@
     "status": "on-track",
     "tags": ["online friend", "design"],
     "bio": "Met through an online design community. We exchange feedback on UI/UX work.",
-    "goal": 14,
+    "goal": 24,
     "next_due_date": "2026-04-21"
   }
 ]

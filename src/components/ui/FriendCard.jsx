@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FriendCard = ({friend}) => {
     console.log(friend);
     return (
         <div>
+            <Link to={`/friendDetails/${friend.id}`}>
             <div className='p-7 bg-white rounded-lg space-y-3 shadow-sm hover:scale-105 duration-300'>
                 <div><img className='h-20 w-20 rounded-full object-cover mx-auto' src={friend.picture} alt="" /></div>
                 <div className='text-center space-y-2.5'>
@@ -17,6 +19,7 @@ const FriendCard = ({friend}) => {
                     <span className={`text-sm font-medium text-white p-2 rounded-full ${friend.status === "overdue" && 'bg-[#EF4444]'} ${friend.status === "almost due" && 'bg-[#EFAD44]'} ${friend.status === "on-track" && 'bg-[#244D3F]'}`}>{friend.status}</span>
                 </div>
             </div>
+            </Link>
         </div>
     );
 };

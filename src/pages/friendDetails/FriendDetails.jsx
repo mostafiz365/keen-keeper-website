@@ -58,7 +58,7 @@ const FriendDetails = () => {
             </div>
         </div>
         <div className="md:w-[65%] space-y-7">
-            <div className="grid grid-cols-3 gap-6 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div className='px-4 py-8 rounded-lg bg-white space-y-2 shadow-sm'>
                     <h3 className='text-3xl font-semibold text-[#244D3F]'>{selectedFriend.days_since_contact}</h3>
                     <p className='text-lg text-[#64748B]'>Days Since Contact</p>

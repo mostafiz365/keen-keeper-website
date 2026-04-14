@@ -14,7 +14,9 @@ const Timeline = () => {
                 <div>
                     <h2 className='text-5xl font-bold text-[#1F2937]'>Timeline</h2>
                 </div>
-                <div>
+                {
+                    calling.length == 0 && sms.length == 0 && video.length == 0 ? <h2 className='text-6xl font-semibold text-[#1F2937] text-center py-20'>No Data Here</h2> : 
+                    <div>
                     <div className='space-y-6'>
                         {
                             calling.map((data, index) => <div key={index} className='p-4 rounded-lg bg-white flex items-center gap-5 w-full shadow-sm'>
@@ -46,6 +48,8 @@ const Timeline = () => {
                     </div>
                     
                 </div>
+                }
+                
             </div>
         </div>
     );

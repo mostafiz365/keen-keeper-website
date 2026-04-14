@@ -11,7 +11,7 @@ const FriendDetails = () => {
   const { id } = useParams();
   const friends = useLoaderData();
 
-  const {handleCallBtn} = useContext(FriendContext);
+  const {handleCallBtn, handleSmsBtn, handleVideoBtn} = useContext(FriendContext);
 
   const selectedFriend = friends.find((friend) => friend.id == id);
   console.log(selectedFriend);
@@ -85,8 +85,8 @@ const FriendDetails = () => {
                 <h4 className='text-xl font-medium text-[#244D3F]'>Quick Check-In</h4>
                 <div className="grid grid-cols-3 gap-4">
                     <button onClick={() => handleCallBtn(selectedFriend)} className="p-4 rounded-lg bg-[#F8FAFC] text-lg text-[#1F2937] flex flex-col justify-center items-center border border-[#E9E9E9] gap-2 cursor-pointer hover:bg-blue-500 duration-300 hover:text-white"><FiPhoneCall />Call</button>
-                    <button className="p-4 rounded-lg bg-[#F8FAFC] text-lg text-[#1F2937] flex flex-col justify-center items-center border border-[#E9E9E9] gap-2 cursor-pointer hover:bg-blue-500 duration-300 hover:text-white"><MdOutlineTextsms />Text</button>
-                    <button className="p-4 rounded-lg bg-[#F8FAFC] text-lg text-[#1F2937] flex flex-col justify-center items-center border border-[#E9E9E9] gap-2 cursor-pointer hover:bg-blue-500 duration-300 hover:text-white"><GoDeviceCameraVideo />Video</button>
+                    <button onClick={()=> handleSmsBtn(selectedFriend)} className="p-4 rounded-lg bg-[#F8FAFC] text-lg text-[#1F2937] flex flex-col justify-center items-center border border-[#E9E9E9] gap-2 cursor-pointer hover:bg-blue-500 duration-300 hover:text-white"><MdOutlineTextsms />Text</button>
+                    <button onClick={() => handleVideoBtn(selectedFriend)} className="p-4 rounded-lg bg-[#F8FAFC] text-lg text-[#1F2937] flex flex-col justify-center items-center border border-[#E9E9E9] gap-2 cursor-pointer hover:bg-blue-500 duration-300 hover:text-white"><GoDeviceCameraVideo />Video</button>
                 </div>
             </div>
         </div>

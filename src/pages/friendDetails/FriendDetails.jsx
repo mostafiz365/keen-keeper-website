@@ -18,8 +18,8 @@ const FriendDetails = () => {
 
   return (
     <div className="bg-[#F8FAFC] py-20">
-      <div className="max-w-10/12 mx-auto flex gap-5">
-        <div className="w-[35%] space-y-4">
+      <div className="max-w-10/12 mx-auto flex flex-col md:flex-row gap-5">
+        <div className="md:w-[35%] space-y-4">
           <div className="p-6 bg-white rounded-lg space-y-3 shadow-sm">
             <div>
               <img
@@ -33,7 +33,7 @@ const FriendDetails = () => {
                 {selectedFriend.name}
               </h2>
               <span
-                className={`text-sm font-medium text-white p-2 rounded-full ${selectedFriend.status === "overdue" && "bg-[#EF4444]"} ${selectedFriend.status === "almost due" && "bg-[#EFAD44]"} ${selectedFriend.status === "on-track" && "bg-[#244D3F]"}`}
+                className={`text-sm font-medium text-white p-2 rounded-full ${selectedFriend.status === "Overdue" && "bg-[#EF4444]"} ${selectedFriend.status === "Almost Due" && "bg-[#EFAD44]"} ${selectedFriend.status === "On-Track" && "bg-[#244D3F]"}`}
               >
                 {selectedFriend.status}
               </span>
@@ -48,7 +48,7 @@ const FriendDetails = () => {
                 ))}
               </div>
               <p className="font-medium text-[#64748B]">{selectedFriend.bio}</p>
-              <p className="text-[#64748B]">{selectedFriend.email}</p>
+              <p className="text-[#64748B]">Email: {selectedFriend.email}</p>
             </div>
           </div>
           <div className="space-y-2.5">
@@ -57,7 +57,7 @@ const FriendDetails = () => {
                 <button className="p-4 bg-white rounded-md w-full font-medium text-red-500 flex justify-center items-center gap-1 shadow-sm"><RiDeleteBin5Line />Delete</button>
             </div>
         </div>
-        <div className="w-[65%] space-y-7">
+        <div className="md:w-[65%] space-y-7">
             <div className="grid grid-cols-3 gap-6 text-center">
                 <div className='px-4 py-8 rounded-lg bg-white space-y-2 shadow-sm'>
                     <h3 className='text-3xl font-semibold text-[#244D3F]'>{selectedFriend.days_since_contact}</h3>

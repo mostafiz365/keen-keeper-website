@@ -16,7 +16,7 @@ const FriendCard = ({friend}) => {
                             friend.tags.map((tag, index) => <span key={index} className='font-semibold text-sm text-[#244D3F] bg-[#CBFADB] px-3 py-2 rounded-full'>{tag}</span>)
                         }
                     </div>
-                    <span className={`text-sm font-medium text-white p-2 rounded-full ${friend.status === "overdue" && 'bg-[#EF4444]'} ${friend.status === "almost due" && 'bg-[#EFAD44]'} ${friend.status === "on-track" && 'bg-[#244D3F]'}`}>{friend.status}</span>
+                    <span className={`text-sm font-medium text-white p-2 rounded-full ${friend.status === "Overdue" && 'bg-[#EF4444]'} ${friend.status === "Almost Due" && 'bg-[#EFAD44]'} ${friend.status === "On-Track" && 'bg-[#244D3F]'}`}>{friend.status}</span>
                 </div>
             </div>
             </Link>

@@ -6,7 +6,6 @@ import VideoImg from '../../assets/images/video.png';
 
 const Timeline = () => {
     const {calling, sms, video} = useContext(FriendContext);
-    console.log(calling, sms, video);
 
 
     return (

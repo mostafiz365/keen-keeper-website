@@ -1,16 +1,36 @@
-# React + Vite
+# Friend Pulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A modern web app to help you stay on your relationships** — track contact frequency with friends, never miss a catch-up, and maintain meaningful connections.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Short Description
 
-## React Compiler
+**Friend Pulse** is a responsive relationship management web application that helps users monitor and nurture their personal and professional connections. It tracks how long it’s been since you last contacted each friend, shows their status and provides powerful tools like timelines, detailed profiles, and insightful statistics.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Technologies Used
+
+- **Frontend Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS + DaisyUI
+- **Routing:** React Router
+- **Data Visualization:** Recharts
+- **Icons:** React Icons
+- **Notifications:** React Toastify
+- **State Management:** React Context API
+- **Build & Deployment:** Vite + Vercel
+
+---
+
+## ✨ 3 Key Features
+
+1. **📋 Smart Friend Management & Dynamic Profiles**  
+   Browse all your friends with rich profiles including photos, bios, tags, email, and contact history. Each friend has a status calculated against your personal goal days. Click any friend to view full details data.
+
+2. **📅 Interactive Timeline Page**  
+   A clean, sortable timeline view to see your contact history and upcoming due dates. Perfect for planning catch-ups and staying organized.
+
+3. **📊 Insightful Stats Dashboard**  
+   Beautiful data visualizations (Recharts) showing contact trends, status distribution, and relationship insights — helping you understand where you need to focus your attention.

@@ -93,7 +93,7 @@ const Timeline = () => {
                       </span>
                     </h3>
                     <p className="font-medium text-[#64748B]">
-                      {data.next_due_date}
+                      {new Date().toISOString().split("T")[0]}
                     </p>
                   </div>
                 </div>
